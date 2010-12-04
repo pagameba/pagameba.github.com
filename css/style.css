@@ -241,12 +241,54 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
   background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
   filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+  
+  overflow: hidden;
 }
 
 header p {
   margin: 0 10px;
 }
 
+#nav {
+  height: 25px;
+  width: 960px;
+  margin: auto;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  line-height: 25px;
+  color: #fef4e9;
+}
+
+#nav ul {
+  margin: 0px;
+  list-style: none;
+  overflow: hidden;
+  float: right;
+  border-top: solid 1px #000;
+  background: #f78d1d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#666   ), to(#000));
+  background: -moz-linear-gradient(top,  #666,  #000);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#666', endColorstr='#000');
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#nav ul li {
+  float: left;
+}
+
+#nav a,
+#nav a:visited,
+#nav a:hover,
+#nav a:active {
+  padding: 0px 30px;
+  color: #faa51a;
+}
 
 #main {
   display: block;
@@ -255,38 +297,39 @@ header p {
 }
 
 #main section {
-  margin: 10px;
+  margin: 10px 0;
 }
 
-footer {
-  display: block;
-  width: 960px;
-  height: 50px;
-  margin: auto;
+.module {
+  background: #f0f0f0;
+  border-bottom: 1px solid #d4d4d4;
+  overflow: hidden;
+  padding: 10px;
+}
 
-  font: 12px Arial, Helvetica, sans-serif;
-  text-shadow: 0 1px 1px rgba(0,0,0,.3);
-  line-height: 50px;
+.module h1 {
+  font-size: 1.5em;
+  margin: 0 0 .5em 0;
+  font-weight: bold;
   color: #fef4e9;
-  border-top: solid 1px #000;
-  background: #f78d1d;
-  background: -webkit-gradient(linear, left top, left bottom, from(#666   ), to(#000));
-  background: -moz-linear-gradient(top,  #666,  #000);
-  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#666', endColorstr='#000');
+}
+.module .extras {
+  float: right;
+  margin: 0px;
+  list-style: none;
+  overflow: hidden;
 }
 
-footer p {
-  margin: 0 10px;
-  text-align: center;
+.module .extras li {
+  float: left;
 }
 
-footer a,
-footer a:visited,
-footer a:hover,
-footer a:active {
-  padding: 0px 30px;
-  color: #faa51a;
+.module .extras li a {
+  padding: 0 10px;
 }
+
+footer { }
+
 
 
 
